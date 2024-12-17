@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis-Jenis Sampah B3"
+            android:textSize="18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/judul"/>
+
+        <!-- Definition of B3 Waste -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sampah B3 adalah limbah yang mengandung bahan berbahaya dan beracun yang dapat mencemari lingkungan serta membahayakan kesehatan manusia jika tidak dikelola dengan baik."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nyoba"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word" />
+
+        <!-- 1. Baterai Bekas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/battery_waste"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Baterai Bekas"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Baterai AA, baterai ponsel, baterai laptop, dan power bank rusak.\nCiri-ciri: Mengandung bahan kimia seperti lithium, merkuri, atau asam yang berbahaya bagi lingkungan dan kesehatan.\nPemanfaatan: Harus dikumpulkan di tempat pengolahan limbah khusus untuk didaur ulang atau dinetralkan."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+
+        <!-- 2. Lampu Neon dan Bohlam -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lamp_waste"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Lampu Neon dan Bohlam"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Lampu TL, bohlam LED, dan lampu hemat energi.\nCiri-ciri: Mengandung merkuri atau bahan logam berat lainnya yang berbahaya jika pecah.\nPemanfaatan: Dapat didaur ulang melalui program pengumpulan khusus yang disediakan oleh produsen atau pengelola limbah."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+
+        <!-- 3. Pestisida dan Bahan Kimia Rumah Tangga -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chemical_waste"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Pestisida dan Bahan Kimia Rumah Tangga"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Sisa pestisida, cairan pembersih, pemutih, dan cat.\nCiri-ciri: Mengandung bahan kimia beracun yang dapat mencemari air dan tanah jika dibuang sembarangan.\nPemanfaatan: Perlu pengelolaan khusus di fasilitas pengolahan limbah B3 untuk mencegah pencemaran lingkungan."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+
+        <!-- 4. Obat-obatan Kadaluarsa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/expired_medicine"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Obat-obatan Kadaluarsa"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Obat tablet, kapsul, sirup, atau salep yang sudah tidak layak konsumsi.\nCiri-ciri: Mengandung zat aktif yang bisa menjadi racun jika masuk ke lingkungan tanpa pengolahan yang tepat.\nPemanfaatan: Dihancurkan atau dimusnahkan di fasilitas yang sesuai dengan standar pengelolaan limbah medis."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

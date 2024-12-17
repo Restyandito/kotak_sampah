@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis-Jenis Sampah Organik"
+            android:textSize="18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/judul"/>
+        <!-- Definition of Organic Waste -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sampah organik adalah jenis sampah yang berasal dari bahan alami yang mudah terurai oleh mikroorganisme, seperti sisa makanan, daun, dan limbah tanaman."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nyoba"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word" />
+
+        <!-- 1. Sampah Sisa Makanan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food_waste"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Sampah Sisa Makanan"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Nasi basi, sisa sayuran, kulit buah, sisa daging, dan makanan yang tidak habis dimakan.\nCiri-ciri: Cepat membusuk dan mengeluarkan bau tidak sedap jika dibiarkan terlalu lama.\nPemanfaatan: Dapat diolah menjadi kompos atau pakan ternak."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:fontFamily="@font/nyoba"
+                android:lineSpacingMultiplier="1.3"
+                android:justificationMode="inter_word" />
+
+        </LinearLayout>
+
+        <!-- 2. Sampah Dedaunan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/leaves_waste"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Sampah Dedaunan"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Daun kering, rumput, ranting kecil, dan sisa tanaman.\nCiri-ciri: Mudah terurai secara alami, terutama di area yang lembap.\nPemanfaatan: Biasa digunakan sebagai mulsa atau bahan kompos untuk menyuburkan tanah."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+
+        <!-- 3. Sampah Kulit Buah dan Sayur -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fruit_peel_waste"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Sampah Kulit Buah dan Sayur"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Kulit pisang, kulit jeruk, kulit bawang, kulit kentang, dan potongan sayuran.\nCiri-ciri: Kandungan airnya tinggi, sehingga mudah terurai.\nPemanfaatan: Sumber utama dalam pembuatan pupuk organik cair atau kompos."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+
+        <!-- 4. Sampah Sisa Kertas dan Kardus -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/paper_waste"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Sampah Sisa Kertas dan Kardus"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Kertas bekas, tisu bekas, kardus basah, dan kotak makanan dari bahan kertas.\nCiri-ciri: Terbuat dari bahan alami (serat kayu), tetapi memerlukan kondisi tertentu untuk terurai lebih cepat.\nPemanfaatan: Bisa didaur ulang menjadi kertas baru atau digunakan untuk kompos."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+
+        <!-- 5. Sisa Limbah Hewan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/animal_waste"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Sisa Limbah Hewan"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Kotoran hewan, sisa makanan dari hewan peliharaan, bulu, atau rambut.\nCiri-ciri: Biasanya memiliki bau khas dan bisa menjadi bahan organik yang sangat berguna.\nPemanfaatan: Kotoran hewan dapat dijadikan pupuk atau bahan pakan ternak."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

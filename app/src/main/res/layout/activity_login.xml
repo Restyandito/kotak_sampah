@@ -1,0 +1,114 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/light_green">
+
+    <!-- Login Box with border and rounded corners -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/login_box_border"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_trash_logo"
+            android:background="@drawable/circle_border" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/background_gray"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"
+            android:importantForAccessibility="yes" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/background_gray"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword"
+            android:importantForAccessibility="yes" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="@color/dark_green"
+            android:background="@drawable/button_border"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp" />
+
+        <!-- TextView for 'Belum Registrasi?' -->
+        <TextView
+            android:id="@+id/registerRedirectText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum Registrasi? Daftar Sekarang"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="@color/dark_green"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+        <!-- TextView for 'Lupa Password?' -->
+        <TextView
+            android:id="@+id/forgotPasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lupa Password?"
+            android:textColor="@color/dark_green"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+</LinearLayout>

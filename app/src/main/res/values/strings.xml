@@ -1,0 +1,67 @@
+<resources>
+    <!-- Array untuk kategori sampah -->
+    <string-array name="waste_categories">
+        <item>Pilih Kategori</item>
+        <item>Organik</item>
+        <item>Non-Organik</item>
+        <item>B3</item>
+    </string-array>
+
+    <!-- Array untuk jenis sampah Organik -->
+    <string-array name="organic_waste_types">
+        <item>Pilih Jenis Sampah</item>
+        <item>Sayur-sayuran</item>
+        <item>Buah-buahan</item>
+        <item>Daun kering</item>
+        <item>Tanah</item>
+        <item>Potongan rumput</item>
+        <item>Kulit buah</item>
+        <item>Kerang</item>
+        <item>Telur dan cangkang</item>
+        <item>Sisa makanan</item>
+        <item>Teh atau kopi bekas</item>
+        <item>Batang tanaman</item>
+        <item>Kayu kecil</item>
+        <item>Ranting dan cabang</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <!-- Array untuk jenis sampah Non-Organik -->
+    <string-array name="non_organic_waste_types">
+        <item>Pilih Jenis Sampah</item>
+        <item>Plastik</item>
+        <item>Kaleng</item>
+        <item>Kaca</item>
+        <item>Logam</item>
+        <item>Stik es krim</item>
+        <item>Botol plastik</item>
+        <item>Botol kaca</item>
+        <item>Kardus</item>
+        <item>Aluminium foil</item>
+        <item>Emas dan perak bekas</item>
+        <item>Sepatu dan sandal bekas</item>
+        <item>Peralatan rumah tangga rusak</item>
+        <item>Elektronik rusak</item>
+        <item>Barang-barang plastik sekali pakai</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <!-- Array untuk jenis sampah B3 (Bahaya dan Beracun) -->
+    <string-array name="b3_waste_types">
+        <item>Pilih Jenis Sampah</item>
+        <item>Obat Kadaluarsa</item>
+        <item>Baterai bekas</item>
+        <item>Cat dan pelarut</item>
+        <item>Peralatan elektronik rusak</item>
+        <item>Produk pembersih berbahaya</item>
+        <item>Asbes</item>
+        <item>Minyak bekas</item>
+        <item>Botol pestisida</item>
+        <item>Mesin atau alat yang mengandung logam berat</item>
+        <item>Peralatan yang mengandung gas berbahaya</item>
+        <item>Solar atau bensin bekas</item>
+        <item>Lampu neon bekas</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string name="app_name" />
+</resources>

@@ -1,0 +1,108 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/light_green">
+
+    <!-- Input Sampah Box with border and rounded corners -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/login_box_border"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/sampahLogoImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_trash_logo"
+            android:background="@drawable/circle_border" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/inputSampahTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Sampah"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <!-- EditText for quantity of organic waste -->
+        <EditText
+            android:id="@+id/quantityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jumlah Sampah"
+            android:background="@drawable/background_gray"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"
+            android:inputType="number"
+            android:importantForAccessibility="yes" />
+
+        <!-- Spinner for selecting waste category -->
+        <Spinner
+            android:id="@+id/wasteCategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_gray"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"
+            android:minHeight="48dp"
+            android:importantForAccessibility="yes" />
+
+        <!-- Spinner for selecting waste type -->
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_gray"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"
+            android:importantForAccessibility="yes" />
+
+        <!-- EditText for "Lainnya" input, initially hidden -->
+        <EditText
+            android:id="@+id/otherWasteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama Sampah Lainnya"
+            android:background="@drawable/background_gray"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:importantForAccessibility="yes" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Sampah"
+            android:backgroundTint="@color/dark_green"
+            android:background="@drawable/button_border"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739210037722",
+    "project_id": "sampah-d9870",
+    "storage_bucket": "sampah-d9870.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739210037722:android:ab46b32851323f58e798e3",
+        "android_client_info": {
+          "package_name": "com.example.aplikasi_layanan_sampah"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA898dUK1zpB9Tg_Vc-Z2aMF0A5N6C7icU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

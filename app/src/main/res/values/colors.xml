@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_start">#009688</color>  <!-- Warna hijau laut -->
+    <color name="green_end">#004D40</color>    <!-- Warna hijau zaitun -->
+    <color name="green_transparent">#80A5D6A7</color> <!-- Hijau transparan -->
+    <color name="light_green">#E8F5E9</color>
+    <color name="dark_green">#388E3C</color>
+</resources>

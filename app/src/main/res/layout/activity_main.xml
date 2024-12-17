@@ -1,0 +1,267 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/light_green">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/light_green">
+
+        <!-- Foto Profil berbentuk Lingkaran -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_profile"
+            android:layout_marginEnd="12dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="Profile Picture"
+            app:shapeAppearanceOverlay="@style/CircleImageStyle" />
+
+        <!-- Sapaan dengan Nama User -->
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Pagi, User!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"
+            android:layout_toEndOf="@id/profileImageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Tanggal Saat Ini -->
+        <TextView
+            android:id="@+id/currentDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16 Desember 2024"
+            android:textSize="14sp"
+            android:textColor="@color/dark_green"
+            android:layout_toEndOf="@id/profileImageView"
+            android:layout_below="@id/userNameTextView"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+
+    <!-- Tombol untuk menuju menu input sampah -->
+
+    <!-- Tombol di Tengah Layar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <!-- Tombol Jadwal Pengambilan Sampah -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/scheduleCardView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_marginEnd="45dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@android:color/white">
+                <ImageView
+                    android:id="@+id/scheduleIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_schedule"
+                    android:contentDescription="Jadwal Pengambilan Sampah" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tombol Edukasi Pengguna -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/educationCardView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_marginStart="39dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/educationIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="Edukasi Pengguna"
+                    android:src="@drawable/ic_education" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Teks di bawah tombol -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+        <!-- Teks Jadwal Pengambilan -->
+        <TextView
+            android:id="@+id/scheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Pengambilan"
+            android:textColor="@color/dark_green"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginEnd="34dp" />
+        <!-- Teks Edukasi Pengguna -->
+        <TextView
+            android:id="@+id/educationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edukasi Pengguna"
+            android:textColor="@color/dark_green"
+            android:gravity="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/inputSampahButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Sampah"
+        android:textSize="16sp"
+        android:backgroundTint="@color/dark_green"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+    <!-- ViewPager for Image Slider -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_marginTop="30dp"
+        android:clipToPadding="false"
+        android:padding="16dp" />
+
+    <!-- Membuat Scrollable untuk Tombol Kategori Sampah -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+            <!-- Tombol kategori sampah lainnya -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/organicCardView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/white">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_organic_waste"
+                        android:contentDescription="Organik"
+                        android:layout_marginStart="16dp" />
+                    <TextView
+                        android:layout_width="54dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:text="Organik"
+                        android:textColor="@color/dark_green"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tombol Kategori Sampah Non-Organik -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nonOrganicCardView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/white">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_non_organic_waste"
+                        android:contentDescription="Non-Organik"
+                        android:layout_marginStart="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Non-Organik"
+                        android:textSize="14sp"
+                        android:textColor="@color/dark_green"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tombol Kategori Sampah B3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/b3CardView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/white">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_b3_waste"
+                        android:contentDescription="B3"
+                        android:layout_marginStart="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B3"
+                        android:textSize="14sp"
+                        android:textColor="@color/dark_green"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Judul Tutorial -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutorial Menggunakan Aplikasi Layanan Sampah"
+            android:textSize="18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/judul"/>
+
+        <!-- Langkah 1: Menambahkan Sampah -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Langkah 1: Menambahkan Sampah"
+            android:textSize="16sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sub_judul"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_waste_image"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Untuk menambahkan sampah, pilih kategori sampah yang sesuai dari menu utama. Anda dapat memilih sampah anorganik atau organik, kemudian masukkan jenis sampah beserta jumlahnya."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.3"
+            android:fontFamily="@font/nyoba"
+            android:layout_marginBottom="16dp"
+            android:justificationMode="inter_word" />
+
+        <!-- Langkah 2: Mengatur Jadwal Pengambilan -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Langkah 2: Mengatur Jadwal Pengambilan"
+            android:textSize="16sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sub_judul"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/schedule_pickup_image"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setelah menambahkan sampah, Anda dapat mengatur jadwal pengambilan sampah. Pilih tanggal dan waktu yang sesuai dengan kebutuhan Anda, dan pastikan alamat pengambilan sudah benar."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.3"
+            android:fontFamily="@font/nyoba"
+            android:layout_marginBottom="16dp"
+            android:justificationMode="inter_word" />
+
+        <!-- Langkah 3: Melakukan Pembayaran -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Langkah 3: Melakukan Pembayaran"
+            android:textSize="16sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sub_judul"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/payment_image"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setelah menambahkan sampah dan mengatur jadwal pengambilan, Anda dapat melanjutkan ke halaman pembayaran. Pilih metode pembayaran yang tersedia dan selesaikan transaksi."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.3"
+            android:fontFamily="@font/nyoba"
+            android:layout_marginBottom="16dp"
+            android:justificationMode="inter_word" />
+
+        <!-- Langkah 4: Menunggu Konfirmasi Pengambilan -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Langkah 4: Menunggu Konfirmasi Pengambilan"
+            android:textSize="16sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sub_judul"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/confirmation_image"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setelah pembayaran selesai, Anda akan menerima konfirmasi mengenai jadwal pengambilan sampah. Pastikan untuk menunggu di lokasi yang telah Anda tentukan."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.3"
+            android:fontFamily="@font/nyoba"
+            android:layout_marginBottom="16dp"
+            android:justificationMode="inter_word" />
+
+        <!-- Langkah 5: Memberikan Feedback -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Langkah 5: Memberikan Feedback"
+            android:textSize="16sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sub_judul"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/feedback_image"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setelah pengambilan sampah selesai, Anda dapat memberikan feedback atau penilaian terhadap layanan kami untuk membantu meningkatkan kualitas layanan."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.3"
+            android:fontFamily="@font/nyoba"
+            android:layout_marginBottom="16dp"
+            android:justificationMode="inter_word" />
+
+    </LinearLayout>
+</ScrollView>

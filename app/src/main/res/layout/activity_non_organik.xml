@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis-Jenis Sampah Anorganik"
+            android:textSize="18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/judul"/>
+
+        <!-- Pengertian Sampah Anorganik -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sampah anorganik adalah jenis sampah yang berasal dari bahan-bahan yang tidak dapat terurai secara alami oleh mikroorganisme dalam tanah. Bahan-bahan ini umumnya bersifat tahan lama, seperti plastik, logam, kaca, dan elektronik. Sampah anorganik sering kali membutuhkan proses daur ulang atau pengolahan khusus agar dapat digunakan kembali atau mengurangi dampaknya terhadap lingkungan."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.3"
+            android:fontFamily="@font/nyoba"
+            android:layout_marginBottom="16dp"
+            android:justificationMode="inter_word" />
+
+        <!-- Sampah Plastik -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plastic_waste"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Sampah Plastik"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Botol air mineral, kantong plastik, sedotan, bungkus makanan, dan wadah plastik lainnya.\nCiri-ciri: Tahan lama, ringan, tidak mudah terurai, dan sering ditemukan dalam jumlah besar.\nPemanfaatan: Bisa didaur ulang menjadi biji plastik, kerajinan tangan, atau bahan bangunan seperti paving block."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+
+        </LinearLayout>
+
+        <!-- Sampah Logam -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/metal_waste"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Sampah Logam"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Kaleng minuman, tutup botol, aluminium foil, dan benda logam lainnya.\nCiri-ciri: Tahan karat (terutama aluminium), kokoh, dan bernilai ekonomis tinggi untuk daur ulang.\nPemanfaatan: Dilebur kembali untuk dijadikan bahan baku produk baru, seperti peralatan dapur atau kendaraan."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+
+        <!-- Sampah Kaca -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/glass_waste"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Sampah Kaca"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Botol kaca, pecahan kaca, dan kaca jendela yang sudah tidak terpakai.\nCiri-ciri: Tidak mudah rusak, transparan, dan dapat dilebur untuk digunakan kembali.\nPemanfaatan: Dapat didaur ulang menjadi botol baru, bahan keramik, atau dekorasi."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+
+        <!-- Sampah Kertas Non-Daur Ulang -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/non_recyclable_paper"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Sampah Kertas Non-Daur Ulang"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sub_judul" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh: Kertas laminasi, kertas karbon, kertas lilin, dan kertas dengan lapisan plastik.\nCiri-ciri: Tidak dapat terurai secara alami karena lapisan pelindung yang digunakan.\nPemanfaatan: Biasanya digunakan kembali sebagai bahan bakar alternatif atau bahan dekorasi."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.3"
+                android:fontFamily="@font/nyoba"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

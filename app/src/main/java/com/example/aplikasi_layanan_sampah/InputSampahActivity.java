@@ -1,5 +1,6 @@
 package com.example.aplikasi_layanan_sampah;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -142,13 +143,19 @@ public class InputSampahActivity extends AppCompatActivity {
         WasteData wasteData = new WasteData(quantity, category, waste);
 
         // Menyimpan data ke Firebase Cloud Firestore
-        db.collection("waste_entries")  // Ganti dengan koleksi Firestore yang sesuai
+        db.collection("waste_entries")
                 .add(wasteData)
                 .addOnSuccessListener(documentReference -> {
-                    Toast.makeText(InputSampahActivity.this, "Data berhasil disimpan", Toast.LENGTH_LONG).show();
+                    // Data berhasil disimpan, pindah ke RincianSampahActivity
+                    Intent intent = new Intent(InputSampahActivity.this, RincianSampahActivity.class);
+                    intent.putExtra("CATEGORY", category);
+                    intent.putExtra("WASTE_TYPE", waste);
+                    intent.putExtra("QUANTITY", quantity);
+                    startActivity(intent);
                 })
                 .addOnFailureListener(e -> {
                     Toast.makeText(InputSampahActivity.this, "Gagal menyimpan data", Toast.LENGTH_SHORT).show();
                 });
     }
+
 }

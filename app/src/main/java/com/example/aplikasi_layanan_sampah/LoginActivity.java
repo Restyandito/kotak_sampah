@@ -1,6 +1,7 @@
 package com.example.aplikasi_layanan_sampah;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -18,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button loginButton;
     private FirebaseAuth firebaseAuth;
     private TextView registerRedirectText, forgotPasswordText;
+    private FirebaseFirestore db = FirebaseFirestore.getInstance(); // Firebase Firestore instance
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +54,17 @@ public class LoginActivity extends AppCompatActivity {
                             // Get user details
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             String userName = (user != null && user.getDisplayName() != null)
-                                    ? user.getDisplayName()
-                                    : user.getEmail(); // Fallback to email if no displayName
+                                    ? user.getDisplayName() // Menggunakan displayName (nama lengkap)
+                                    : user.getEmail().split("@")[0];
+
+                            // Save user data to SharedPreferences
+                            SharedPreferences sharedPreferences = getSharedPreferences("user_data", MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedPreferences.edit();
+                            editor.putString("USER_NAME", userName);
+                            editor.apply();
+
+                            // Save user data to Firestore
+                            saveUserToFirestore(user);
 
                             Toast.makeText(LoginActivity.this, "Selamat Datang!", Toast.LENGTH_SHORT).show();
 
@@ -78,6 +90,24 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class); // ForgotPasswordActivity for reset password
             startActivity(intent);
         });
+    }
 
+    // Function to save user data to Firestore
+    private void saveUserToFirestore(FirebaseUser user) {
+        if (user != null) {
+            // Membuat objek UserData untuk menyimpan data pengguna
+            UserData userData = new UserData(user.getUid(), user.getEmail(), user.getDisplayName());
+
+            // Menyimpan data pengguna ke Firestore
+            db.collection("users")
+                    .document(user.getUid())  // Menggunakan UID sebagai ID dokumen
+                    .set(userData)
+                    .addOnSuccessListener(aVoid -> {
+                        Toast.makeText(LoginActivity.this, "User data saved to Firestore", Toast.LENGTH_SHORT).show();
+                    })
+                    .addOnFailureListener(e -> {
+                        Toast.makeText(LoginActivity.this, "Error saving user data", Toast.LENGTH_SHORT).show();
+                    });
+        }
     }
 }

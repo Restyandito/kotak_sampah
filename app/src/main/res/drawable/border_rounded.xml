@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/> <!-- Warna latar belakang -->
+    <corners android:radius="16dp"/> <!-- Radius untuk sudut melengkung -->
+    <stroke android:color="#000000" android:width="2dp"/> <!-- Border hitam dengan ketebalan 2dp -->
+</shape>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_green">
+
+    <!-- Rincian Sampah -->
+    <TextView
+        android:id="@+id/rincianTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rincian Sampah Anda"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/judul"
+        android:layout_marginBottom="10dp" />
+
+    <!-- ScrollView untuk rincian dinamis -->
+    <ScrollView
+        android:id="@+id/scrollViewRincian"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/rincianTextView"
+        android:layout_above="@id/totalCostTextView"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/dynamicRincianTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(Rincian akan tampil di sini)"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:lineSpacingExtra="4dp" />
+    </ScrollView>
+
+    <!-- Total Biaya -->
+    <TextView
+        android:id="@+id/totalCostTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Biaya: Rp 0"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"
+        android:gravity="center" />
+
+    <!-- Tombol Tambah Sampah Lagi -->
+    <Button
+        android:id="@+id/btnAddMoreWaste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Sampah Lagi"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_gradient_2"
+        android:textColor="@android:color/white" />
+
+    <!-- Tombol Pembayaran -->
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddMoreWaste"
+        android:layout_marginTop="-120dp"
+        android:text="Bayar"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/button_border_2"/>
+
+</RelativeLayout>

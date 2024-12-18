@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearanceOverlay">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize8">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="CustomBorderStyle">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.CornerSize8</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+    <style name="CircleImageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- Membuat sudut menjadi lingkaran -->
+    </style>
+    <style name="CustomShape">
+        <item name="android:background">@drawable/border_rounded</item>
+    </style>
+</resources>
